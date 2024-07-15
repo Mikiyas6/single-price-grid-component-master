@@ -1,0 +1,123 @@
+/* 
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+ */
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c1cad7;
+}
+.card {
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border-radius: 9px;
+}
+.header {
+  padding: 4rem;
+  grid-column: 1 / span 2;
+  background: var(--Light-Gray);
+}
+.header-heading {
+  color: var(--Cyan);
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+.header-subheading {
+  color: var(--Bright-Yellow);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+.header-description {
+  color: var(--Grayish-Blue);
+  width: 55rem;
+}
+.subscription {
+  background: #26a09e;
+  padding: 4rem;
+}
+.title {
+  color: var(--Light-Gray);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.money-amount {
+  color: var(--Grayish-Blue);
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.money {
+  color: var(--Light-Gray);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-right: 1.5rem;
+}
+.plan-desc {
+  color: var(--Light-Gray);
+  margin-bottom: 4rem;
+}
+.btn {
+  border: none;
+  color: var(--Light-Gray);
+  background: var(--Bright-Yellow);
+  padding: 1.5rem 4rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.pitch {
+  background: var(--Cyan);
+  padding: 4rem;
+}
+.lists {
+  list-style: none;
+}
+.list {
+  color: white;
+  margin-bottom: 0.4rem;
+}
